@@ -25,6 +25,14 @@ pub struct CIP100Fields {
     pub witness_signature: &'static str,
 }
 
+// The extra context fields used in the context of CIP-108 documents
+pub struct CIP108Fields {
+    pub title: &'static str,
+    pub abstract: &'static str,
+    pub motivation: &'static str,
+    pub rationale: &'static str,
+}
+
 pub const CIP100_FIELDS: CIP100Fields = CIP100Fields {
     hash_algorithm: "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#hashAlgorithm",
     authors: "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#authors",
